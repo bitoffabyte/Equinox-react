@@ -1,0 +1,427 @@
+@import "~antd/dist/antd.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+body,
+html {
+	width: 100%;
+	height: 100%;
+	font-family: "Raleway", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(
+		255,
+		213,
+		134,
+		0
+	); /*change the 4th value 1 is 100% opaque and 0 is transparent*/
+}
+.bgiii {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.background-img {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	background-image: url("assets/bg_up1.png"); /*copy and paste the mage to assets and change the name here*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0%;
+	margin: 0;
+	opacity: 0.8;
+}
+.content0fpage {
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+}
+.mainlogo {
+	position: relative;
+	height: 60%;
+	width: auto;
+	top: 10%;
+	padding-bottom: 5%;
+}
+h1 {
+	font-family: "Raleway", sans-serif;
+	font-size: 300%;
+}
+#about {
+	background-color: transparent;
+	border-radius: 10px;
+	width: 50%;
+	text-align: justify;
+	margin: auto;
+}
+.content {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 125%;
+}
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+	width: 5px; /* Remove scrollbar space */
+	background: lightgray; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: rgb(252, 195, 89);
+}
+
+.ss {
+	display: flex;
+	margin-left: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.sss {
+	text-align: center;
+	justify-content: center;
+}
+
+.sponlogo {
+	width: 15%;
+	margin: 3%;
+}
+.sponlogo:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+.spons {
+	margin: auto;
+	text-align: center;
+	text-align: center;
+	align-items: center;
+	/* margin-left: 9%; */
+}
+
+[type="text"]:focus {
+	outline: none;
+	border-color: #53cace;
+}
+
+.faq1 {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.faqq {
+	width: 80%;
+	margin: auto;
+}
+.faq {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+.faq-item {
+	background-color: rgba(255, 255, 255, 0.37);
+	color: #111;
+	margin: 1rem 2rem;
+	border: rgba(0, 0, 0, 0.39) 1px solid;
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.faq-item-header {
+	padding: 0.5rem 3rem 0.5rem 1rem;
+	min-height: 3.5rem;
+	line-height: 1.25rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+.faq-item-header::after {
+	content: "\002B";
+	font-size: 2rem;
+	position: absolute;
+	right: 1rem;
+}
+.faq-item-header.active::after {
+	content: "\2212";
+}
+.faq-item-body {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+.faq-item-body-content {
+	padding: 1rem;
+	line-height: 1.5rem;
+	border-top: 1px solid;
+	text-align: justify;
+	border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media (max-width: 767px) {
+	html {
+		font-size: 14px;
+	}
+	.faq1 {
+		flex-direction: column;
+	}
+	.faq {
+		margin: -6px auto;
+	}
+	.faq-item {
+		margin: 1rem 0rem;
+	}
+}
+@media screen and (max-width: 707px) {
+	.asdasd {
+		font-size: 40px;
+		margin-top: 30%;
+	}
+}
+
+.myDiv {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	/* margin: 0 auto; */
+	justify-content: center;
+	justify-items: center;
+}
+
+@media screen and (max-width: 1207px) {
+	.myDiv {
+		flex-direction: column;
+	}
+	.ss {
+		/*flex-direction: column; */
+	}
+	.sponlogo {
+		width: 19%;
+	}
+	.mainlogo {
+		position: relative;
+		bottom: 23%;
+		height: 50vh;
+		width: auto;
+	}
+	#about {
+		width: 90%;
+	}
+	#devfolio-apply-now {
+		transform: scale(1);
+	}
+}
+/*SOCIAL MEDIA*/
+a {
+	text-decoration: none;
+	color: #fff;
+}
+p > a:hover {
+	color: #d9d9d9;
+	text-decoration: underline;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+.footer-social-icons {
+	width: auto;
+	display: block;
+	margin: -10px;
+	background: #535051;
+	color: #fff;
+	height: 340px;
+	text-align: center;
+}
+.social-icon {
+	color: #fff;
+}
+ul.social-icons {
+	margin-top: 5px;
+}
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+	/* height: 00px;*/
+}
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+}
+.fa-facebook {
+	padding: 10px 19px;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	background-color: #535051;
+	border-radius: 350px;
+}
+.fa-facebook:hover {
+	background-color: #3d5b99;
+}
+
+.fa-instagram {
+	padding: 10px 14px;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	background-color: #535051;
+	border-radius: 350px;
+}
+.fa-instagram:hover {
+	background-image: linear-gradient(
+		rgb(96, 13, 228),
+		rgb(255, 0, 221),
+		yellow
+	);
+	transition: 0.5s;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	border-style: none;
+	background: transparent;
+	outline: none;
+}
+
+.button {
+	padding: 2%;
+	background: none;
+	border: none;
+	outline: none;
+	transition: background 0.2s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 100% 0;
+	}
+}
+
+.aaaa {
+	animation: colorchange 6s infinite alternate;
+}
+
+.button:hover {
+	/* padding: 1%; */
+	background: rgba(180, 178, 178, 0.527);
+	border-radius: 50%;
+	transition: background 0.2s;
+}
+
+@keyframes colorchange {
+	0% {
+		color: #f9ab17;
+	}
+
+	20% {
+		color: #feee05;
+	}
+
+	40% {
+		color: #2485af;
+	}
+
+	60% {
+		color: #2485af;
+	}
+
+	80% {
+		color: #feee05;
+	}
+
+	100% {
+		color: #f9ab17;
+	}
+}
+
+.EmailInput button:hover {
+	color: #ffffff;
+}
+
+.aaaa {
+	font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+	.EmailInput {
+		width: 95%;
+		padding: 0;
+	}
+	.EmailInput input {
+		flex-grow: 1;
+		font-size: 3em;
+		line-height: 1.4rem;
+		vertical-align: middle;
+		width: 80%;
+	}
+	.EmailInput button:hover {
+		color: #fde975;
+	}
+	.button:hover {
+		background: transparent;
+	}
+}
+
+#devfolio-apply-now {
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	margin: 10% auto;
+	align-items: center;
+	background-color: #3770ff;
+	border-radius: 3px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 18px;
+	font-weight: 600;
+	padding: 12px 20px;
+	text-align: center;
+	transform: scale(2);
+}
+
+#devfolio-apply-now:not([disabled]) {
+	cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+	background-color: #2954bf !important;
+}
